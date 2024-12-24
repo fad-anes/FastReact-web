@@ -1,0 +1,17 @@
+/* Make sure the carousel takes full width */
+.slick-slider {
+    width: 100%;
+  }
+  
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* For smaller devices, reduce padding or adjust margins */
+  @media (max-width: 768px) {
+    .slick-slide img {
+      object-fit: cover; /* Ensure images cover the entire slide without stretching */
+    }
+  }
+  
