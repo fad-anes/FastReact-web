@@ -1,0 +1,54 @@
+/* Place le footer en bas */
+.users-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .users-page > .row {
+    flex: 1;
+  }
+  
+  
+  .custom-table {
+    background-color: #f8f9fa; 
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-table th {
+    background-color: #161616;
+    color: white;
+    text-align: center;
+  }
+  
+  .custom-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  /* Style des badges */
+  .badge {
+    cursor: pointer;
+  }
+  
+  .badge-success {
+    background-color: #28a745; /* Vert */
+    color: white;
+  }
+  
+  .badge-danger {
+    background-color: #dc3545; /* Rouge */
+    color: white;
+  }
+  
+  /* Style pour le titre */
+  h2 {
+    color: #161616;
+    font-weight: bold;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+    
