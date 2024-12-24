@@ -36,8 +36,8 @@ const Register: React.FC = () => {
       if (response) {
         navigate('/login');
       }
-    } catch (error) {
-      setError('Invalid credentials. Please try again.');
+    } catch (error:any) {
+      setError(error.response.data.detail);
     }
   };
 
