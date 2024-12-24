@@ -29,8 +29,8 @@ const UsersPage: React.FC = () => {
       // Refetch users after toggling to update the UI
       const data = await allusers();
       setUsers(data);
-    } catch (error) {
-      console.error('Error toggling user status:', error);
+    } catch (error:any) {
+      console.error(error.response.data.detail);
     }
   };
 

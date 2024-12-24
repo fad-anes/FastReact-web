@@ -35,8 +35,8 @@ const Login: React.FC = () => {
         localStorage.setItem('user-id', response.user.id);
         navigate(response.user.role === 'admin' ? '/dashboard' : '/');
       }
-    } catch (error) {
-      setError('Invalid credentials. Please try again.');
+    } catch (error:any) {
+      setError(error.response.data.detail);
     }
   };
 
